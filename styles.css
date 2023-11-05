@@ -1,0 +1,300 @@
+nav ul {
+  list-style: none;
+  text-align: right;
+  float: right;
+}
+
+nav li {
+  display: inline;
+  margin-right: 30px;
+  font-weight: bold;
+  font-family: Work Sans;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  background-color: #2b2b2b;
+  margin: 0px;
+  padding: 0px;
+}
+
+.custom-button {
+  background-color: #a259ff;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 15px;
+  align-items: center;
+  font-family: Work Sans;
+}
+
+.logo {
+  border: none;
+  padding: 10px 50px;
+  display: flex;
+  align-items: end;
+  float: left;
+  margin-top: 20px;
+}
+
+/* Start */
+
+.main {
+  display: flex;
+  align-items: center;
+}
+
+main {
+  width: 4000px;
+  margin: auto;
+  max-width: 1500px;
+  font-size: 1.5em;
+}
+
+.stocks {
+  display: flex;
+  padding-top: 20px;
+}
+
+.name1 {
+  background-color: #a259ff;
+  border: none;
+  color: white;
+  padding: 20px 50px;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.name1::before {
+  content: url(https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/rocketlaunch@2x.svg);
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.name {
+  font-size: 90px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.NFT {
+  font-family: Work Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  text-transform: capitalize;
+}
+
+.stock1 {
+  margin-right: 100px;
+  display: flex;
+  font-size: 25px;
+  font-family: Work Sans;
+}
+
+.stock2 {
+  margin-right: 100px;
+  display: flex;
+  font-size: 25px;
+  font-family: Work Sans;
+}
+
+.stock3 {
+  margin-right: 10px;
+  display: flex;
+  font-size: 25px;
+  font-family: Work Sans;
+}
+
+.name2 {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.NFT1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 25px;
+}
+
+.inimage {
+  font-family: Work Sans;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  border-radius: 5%;
+}
+
+.image-group {
+  width: 30%;
+  margin-right: 2%;
+  display: inline-block;
+  vertical-align: top;
+  transition: transform 0.3s ease;
+  border-radius: 5%;
+}
+
+.image-group:hover {
+  transform: scale(0.9);
+}
+
+.image-group:last-child {
+  margin-right: 0;
+}
+
+.main1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  font-family: Work Sans;
+  font-weight: bold;
+  justify-content: space-between;
+}
+
+.grid-item {
+  background-color: #3b3b3b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border-radius: 5%;
+}
+
+.grid-item:hover {
+  transform: scale(0.9);
+}
+
+.Sale {
+  font-size: 25px;
+}
+
+.top {
+  font-family: Work Sans;
+  font-size: 40px;
+}
+
+.top1 {
+  font-family: Work Sans;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+.Sale1 {
+  margin-bottom: 10px;
+}
+
+.totalsale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0px;
+  gap: 5px;
+}
+
+.gray {
+  color: #858584;
+}
+
+.trending {
+  position: relative;
+  top: 200px;
+}
+
+.topping {
+  margin-top: 300px;
+}
+
+.work {
+  margin-top: 150px;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  font-family: "Work Sans";
+  font-weight: bold;
+  justify-content: space-between;
+}
+
+.image-item {
+  background-color: #3b3b3b;
+  color: white;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border-radius: 5%;
+  text-align: center;
+}
+
+.image-item:hover {
+  transform: scale(0.9);
+}
+
+.working {
+  font-family: Work Sans;
+  font-size: 40px;
+}
+
+.txt {
+  font-family: Work Sans;
+  font-size: 25px;
+}
+
+.justtxt {
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 1px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.howto {
+  margin-left: 30px;
+}
+
+.setup {
+  font-size: 22px;
+}
+
+.nameless {
+  padding-top: 150px;
+}
+
+.img {
+  padding-top: 200px;
+}
+
+.footer {
+  background-color: #3b3b3b;
+  color: #ccc;
+  text-align: center;
+  padding: 100px 0;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+.footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
