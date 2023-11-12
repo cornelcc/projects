@@ -10,13 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400&display=swap"
       rel="stylesheet"
     />
-  </head>
-  <link
+    <link
     rel="icon"
-    href="https://www.imgonline.com.ua/result_img/imgonline-com-ua-Resize-oZdfCxuOSfPq.png"
+    href="https://cdn-icons-png.flaticon.com/512/6298/6298730.png"
     type="image/x-icon"
   />
-
+  </head>
   <body>
     <!-- nav -->
     <nav class="navbar">
@@ -24,13 +23,15 @@
         <li><a href="#">Marketplace</a></li>
         <li><a href="#">Rankings</a></li>
         <li><a href="#">Connect a Wallet</a></li>
-        <li><button class="custom-button">Sign Up</button></li>
+        <li>
+          <button class="custom-button" id="signupButton">Sign Up</button>
+        </li>
       </ul>
     </nav>
     <div class="logo">
       <div>
         <img
-          src="https://www.imgonline.com.ua/result_img/imgonline-com-ua-Resize-oZdfCxuOSfPq.png"
+          src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/storefront-2@2x.svg"
         />
       </div>
       <div>
@@ -39,7 +40,7 @@
     </div>
     <!-- main -->
     <main>
-      <div class="main">
+      <div class="main1">
         <div class="nameless">
           <h1 class="name">Discover Digital Art & Collect Nfts</h1>
           <p class="NFT">
@@ -189,7 +190,7 @@
           <img
             src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-106@2x.png"
           />
-          <p class="Sale">Animakid</p>
+          <p class="Sale">Tensions</p>
           <div class="totalsale">
             <p class="gray">Total Sales:</p>
             <p>34.53 ETH</p>
@@ -255,15 +256,61 @@
           </p>
         </div>
       </div>
-      </div>
     </main>
-    <div class="footer">
-      <p>&copy; 2023 NFT Paradise</p>
+    <footer class="footer">
+      <p>&copy; 2023 NFT Marketplace</p>
       <ul>
         <li><a href="#">Explore</a></li>
         <li><a href="#">Marketplace</a></li>
         <li><a href="#">Rankings </a></li>
         <li><a href="#">Connect a wallet</a></li>
       </ul>
+    </footer>
+    </div>
+    <div id="registrationModal" class="modal">
+      <div class="modal-content">
+          <span class="close" id="closeModalButton">&times;</span>
+          <h2>Registration</h2>
+          <form>
+              <label for="nickname">Username:</label>
+              <input type="text" id="nickname" name="nickname" required />
+  
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" name="email" required />
+  
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required />
+  
+              <label for="confirmPassword">Confirm Password:</label>
+              <input type="password" id="confirmPassword" name="confirmPassword" required />
+  
+              <button class="click" type="submit">Create account</button>
+          </form>
+      </div>
+  </div>
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+    var modal = document.getElementById("registrationModal");
+    var signupButton = document.getElementById("signupButton");
+    var closeModalButton = document.getElementById("closeModalButton");
+
+    signupButton.onclick = function () {
+        modal.style.display = "flex";
+    }
+
+    closeModalButton.onclick = function () {
+        modal.style.display = "none";
+    }
+    window.addEventListener('click', function (event) {
+        if (event.target === modal || event.target === document) {
+            modal.style.display = "none";
+        }
+    });
+});
+  </script>
+  </div>
   </body>
 </html>
+
+
+
