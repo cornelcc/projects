@@ -1,6 +1,4 @@
 nav ul {
-  list-style: none;
-  text-align: right;
   float: right;
 }
 
@@ -147,6 +145,7 @@ main {
   vertical-align: top;
   transition: transform 0.3s ease;
   border-radius: 5%;
+  cursor: pointer;
 }
 
 .image-group:hover {
@@ -157,7 +156,7 @@ main {
   margin-right: 0;
 }
 
-.main1 img {
+.main2 img {
   max-width: 100%;
   height: auto;
 }
@@ -179,6 +178,7 @@ main {
   text-align: center;
   transition: transform 0.3s ease;
   border-radius: 5%;
+  cursor: pointer;
 }
 
 .grid-item:hover {
@@ -247,10 +247,6 @@ main {
   text-align: center;
 }
 
-.image-item:hover {
-  transform: scale(0.9);
-}
-
 .working {
   font-family: Work Sans;
   font-size: 40px;
@@ -310,8 +306,9 @@ html {
 
 .img {
   display: flex;
-  width: 1300px;
-  height: 600px;
+  width: 100%;
+  height: 100%;
+  margin-left: 50px;
 }
 
 form {
@@ -338,7 +335,7 @@ input {
   box-sizing: border-box;
   border: 1px solid #a259ff;
   border-radius: 30px;
-  background-color: white;
+  background-color: #2b2b2b;
   color: white;
 }
 
@@ -352,6 +349,8 @@ input {
   cursor: pointer;
   transition: transform 0.3s ease;
   margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .click:hover {
